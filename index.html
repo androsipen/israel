@@ -51,6 +51,7 @@
 
 	<link rel="stylesheet" href="libs/owl-carousel/owl.carousel.css">
 	<link rel="stylesheet" href="libs/owl-carousel/owl.theme.default.css">
+	<link rel="stylesheet" href="libs/magnific/magnific-popup.css">
 
 </head>
 
@@ -86,7 +87,7 @@
 			</div>
 
 			<div class="col-xs-4 tac">
-				<a href="#" class='logo'><img src="img/logo.png" style='height: 120px' alt=""></a>
+				<a href="#" class='logo'><img src="img/logo.png" id='logos'' alt=""></a>
 			</div>
 
 			<div class="col-xs-4 tac">
@@ -131,9 +132,7 @@
 				<div class="row hidden-xs hidden-sm" id='hex-row'>
 
 					<div class="col-md-12" style='display: flex;align-items: center;justify-content: center; overflow: auto;'>
-						<div class='hex'>
-							
-						</div>
+						<a class='popup-with-zoom-anim' href='#small-dialog'><div class='hex'></div></a>
 						<div class='hex'></div>
 						<div class='hex'></div>
 					</div>
@@ -153,12 +152,12 @@
 
 				<div class="row hidden-md hidden-lg" style='margin-top: -15%'>
 					<div class="owl-carousel owl-theme">
-						<div class="item col-xs-8 col-xs-offset-2 tac third-page-items">
+						<div class="item col-xs-12 tac third-page-items">
 							<div class='hex'></div>
 							<h3>lorem ipsum</h3>
 							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel unde impedit earum dicta veritatis odio facilis, consequatur culpa</p>
 						</div>
-						<div class="item col-xs-8 col-xs-offset-2 tac third-page-items">
+						<div class="item col-xs-12 tac third-page-items">
 							<div class='hex'></div>
 							<h3>lorem ipsum</h3>
 							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel unde impedit earum dicta veritatis odio facilis, consequatur culpa</p>
@@ -280,18 +279,20 @@
 
 				<div class="row hidden-md hidden-lg" style='margin-top: 23vh'>
 					<div class="owl-carousel owl-theme">
-						<div class="item col-xs-6 col-xs-offset-3 tac four-item">
+						<div class="item col-xs-12 tac four-item">
 							<img src="img/bg4_1.jpg" alt="">
 							<h3>הדרך</h3>
 							<p>בצורה שיטתית של מחקרי השוק, וסיורי מוחות שבהם מאתרים את נקודות החולשה של בית העסק המעוניין בפרסום. תמיד רודפים אחר רעיונות הכי טובים וחדשנים ביותר,  במטרה להפוך את החיסרון ליתרון עד להתאמה של סוג הפרסום באופן מלא.</p>
 						</div>
-						<div class="item col-xs-8 col-xs-offset-2 tac four-item" style='background-image: 	url(img/bg4_2.jpg);height: 628px;'>
-							<h3>המטרה</h3>
-							<p>המטרה של פאצ׳ה  קריאיטיב היא לייצר תוכנית שיווקית באיכות גבוהה המשקפת את הערכים של הלקוח ומתאים לצרכים האמיתיים. וכך להוביל בפרסומים על מנת להגדיל את הרווחים של לקוחותיינו, באמצעות מיתוגים המקצועים של הלקוחות. </p>
+						<div class="item col-xs-12 tac four-item">
+							<img src="img/bg4_2.jpg" alt="">
+							<h3>הדרך</h3>
+							<p>בצורה שיטתית של מחקרי השוק, וסיורי מוחות שבהם מאתרים את נקודות החולשה של בית העסק המעוניין בפרסום. תמיד רודפים אחר רעיונות הכי טובים וחדשנים ביותר,  במטרה להפוך את החיסרון ליתרון עד להתאמה של סוג הפרסום באופן מלא.</p>
 						</div>
-						<div class="item col-xs-8 col-xs-offset-2 tac four-item">
-							<h3>צוות</h3>
-							<p>הצוות שלנו מורכב מאנשי קריאיטיב, עיצוב, ושיווק, ונבנה כמשפחה אחת, גדולה ומאוחדת, שיוצרת יחד את העיצוב המרתק המותאם אישית לעסקים שונים, כך שאתה יכול להיות בטוח שאתה מדבר עם האנשים מוכשרים ומקצועים.</p>
+						<div class="item col-xs-12 tac four-item">
+							<img src="img/bg4_3.jpg" alt="">
+							<h3>הדרך</h3>
+							<p>בצורה שיטתית של מחקרי השוק, וסיורי מוחות שבהם מאתרים את נקודות החולשה של בית העסק המעוניין בפרסום. תמיד רודפים אחר רעיונות הכי טובים וחדשנים ביותר,  במטרה להפוך את החיסרון ליתרון עד להתאמה של סוג הפרסום באופן מלא.</p>
 						</div>
 					</div>
 				</div>
@@ -300,7 +301,7 @@
 		</section>
 		<section>
 			
-			<div class="container-fluid">
+			<div class="container-fluid hidden-xs hidden-sm">
 				<div class="row" style='margin-top: 10%'>
 
 					<div class="col-md-3 tac footer-item">
@@ -331,10 +332,83 @@
 
 				<div class="row footer">
 					
-					<div class="col-md-12 tac">
-
+					<div>
+						<div class="col-md-3 tac">
+							<img src="img/footer-icon.png" alt="">
+						</div>
+						<div class="col-md-3 tac">
+							<img src="img/footer-icon.png" alt="">
+						</div>
+						<div class="col-md-3 tac">
+							<img src="img/footer-icon.png" alt="">
+						</div>
+						<div class="col-md-3 tac">
+							<img src="img/footer-icon.png" alt="">
+						</div>
 					</div>
 
+					<div class="col-md-12 tac">
+						<form class='footer-form' action="">
+							<input type="text" placeholder='מייל'>
+							<input type="text" placeholder='טלפון'>
+							<input type="text" placeholder='שם'>
+							<input type="submit" value='שלח'>
+						</form>
+					</div>
+
+					<div class="col-md-10 col-md-offset-1 tac">
+						<div class="contacts-container">
+							<img src="img/icons/footer-5.png" alt="">
+							<p>pachacreative@gmail.com</p>
+						</div>
+
+						<div class="contacts-container">
+							<img src="img/icons/footer-4.png" alt="">
+							<p>pacha creative</p>
+						</div>
+
+						<div class="contacts-container">
+							<img src="img/icons/footer-3.png" alt="">
+							<p>חיפה, צבר 5</p>
+						</div>
+
+						<div class="contacts-container">
+							<img src="img/icons/footer-2.png" alt="">
+							<p>048-340-173</p>
+						</div>
+
+						<div class="contacts-container">
+							<img src="img/icons/footer-1.png" alt="">
+							<p>0546-480-750</p>
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+
+			<div class="container hidden-lg hidden-md">
+				<div class="row">
+					<div class="col-sm-12 tac">
+						<form class='footer-form-mobile' action="">
+							<input type="text" placeholder='מייל'>
+							<input type="text" placeholder='טלפון'>
+							<input type="text" placeholder='שם'>
+							<input type="submit" value='שלח'>
+						</form>
+					</div>
+
+				</div>
+
+				<div class="row footer-mobile">
+					<div class="col-sm-12 tac">
+						<img src="img/footer-mobile.jpg" style='margin-top: -1px;' alt="">
+					</div>
+					<div class="col-sm-12 tac">
+						<p>
+							חיפה, צבר 5<br>0546-480-750 | 048-340-173<br>pachacreative@gmail.com
+						</p>
+					</div>
 				</div>
 
 			</div>
@@ -342,7 +416,26 @@
 		</section>
 	</div>
 
-	<div class="hidden"></div>
+
+	
+
+	<div id="small-dialog" class="col-md-12 zoom-anim-dialog mfp-hide">
+		<div class="container portfolio-item">
+			<div class="col-md-6 col-md-offset-1">
+				<img src="img/portfolio-1.jpg" alt="">
+			</div>
+			<div class="col-md-5">
+				<h3>פיתוח מיתוג<br>מחודש לרשות<br>השידור</h3>
+				<p>חידוש למיתוג קיים עם<br>שמירת ערכים גרפים.</p>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="hidden">
+
+
+	</div>
 
 	<!--[if lt IE 9]>
 	<script src="libs/html5shiv/es5-shim.min.js"></script>
@@ -356,6 +449,7 @@
 		{"src" : "js/libs.js", "async" : false},
 		{"src" : "libs/onepage-scroll-master/jquery.onepage-scroll.min.js", "async" : false},
 		{"src" : "libs/owl-carousel/owl.carousel.min.js", "async" : false},
+		{"src" : "libs/magnific/jquery.magnific-popup.js", "async" : false},
 		{"src" : "js/common.js", "async" : false}
 		]};!function(t,n,r){"use strict";var c=function(t){if("[object Array]"!==Object.prototype.toString.call(t))return!1;for(var r=0;r<t.length;r++){var c=n.createElement("script"),e=t[r];c.src=e.src,c.async=e.async,n.body.appendChild(c)}return!0};t.addEventListener?t.addEventListener("load",function(){c(r.scripts);},!1):t.attachEvent?t.attachEvent("onload",function(){c(r.scripts)}):t.onload=function(){c(r.scripts)}}(window,document,scr);
 	</script>
